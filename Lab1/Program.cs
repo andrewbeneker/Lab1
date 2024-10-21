@@ -2,8 +2,12 @@
 {
     public static void Main(string[] args)
     {
+        Console.WriteLine("Hello, what is your name?");
+        Console.WriteLine();
+        string userName = Console.ReadLine();
 
-        Console.WriteLine("Hello, please enter a number between 1 and 100.");
+        Console.WriteLine();
+        Console.WriteLine("Hello, " + userName + ", please enter a number between 1 and 100.");
         Console.WriteLine();
 
         int userNumber = int.Parse(Console.ReadLine());
@@ -17,7 +21,7 @@
             {
 
                 Console.WriteLine();
-                Console.WriteLine("Thank you. You've picked " + userNumber);
+                Console.WriteLine("Thank you, " + userName + ". You've picked " + userNumber);
                 Console.WriteLine();
 
                 Console.WriteLine(userNumber + " is odd and less than 60.");
@@ -28,7 +32,7 @@
             {
 
                 Console.WriteLine();
-                Console.WriteLine("Thank you. You've picked " + userNumber);
+                Console.WriteLine("Thank you, " + userName + ". You've picked " + userNumber);
                 Console.WriteLine();
                 Console.WriteLine(userNumber + " is Even and less than 25.");
 
@@ -38,7 +42,7 @@
             {
 
                 Console.WriteLine();
-                Console.WriteLine("Thank you. You've picked " + userNumber);
+                Console.WriteLine("Thank you, " + userName + ". You've picked " + userNumber);
                 Console.WriteLine();
                 Console.WriteLine(userNumber + " is Even and between 26 and 60, inclusive.");
 
@@ -48,7 +52,7 @@
             {
 
                 Console.WriteLine();
-                Console.WriteLine("Thank you. You've picked " + userNumber);
+                Console.WriteLine("Thank you, " + userName + ". You've picked " + userNumber);
                 Console.WriteLine();
                 Console.WriteLine(userNumber + " is even and greater than 60.");
 
@@ -58,7 +62,7 @@
             {
 
                 Console.WriteLine();
-                Console.WriteLine("Thank you. You've picked " + userNumber);
+                Console.WriteLine("Thank you, " + userName + ". You've picked " + userNumber);
                 Console.WriteLine();
                 Console.WriteLine(userNumber + " is odd and greater than 60 and.");
 
@@ -69,7 +73,7 @@
         else
         {
             Console.WriteLine();
-            Console.WriteLine("The number you picked is outside the requested range! Get out of here immediately.");
+            Console.WriteLine("What is wrong with you, " + userName + "?! The number you picked is outside the requested range! Get out of here immediately.");
 
         }
 
